@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<!--Alex Danielson-Lab-02-3/5/2021-CWEB1010-01-->
+
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Lab-02</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="John Doe">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            #wireframe img{
+    width: 1000px;
+}
+
+.headline{
+    font-size: large;
+    font-weight: bold;
+    text-align: ceter;
+}
+
+body{
+    background-color: rgb(71, 118, 163);
+    margin: auto;
+    width: 1000px;
+}
+
+footer{
+    background-color: rgb(255, 0, 0);
+    clear: both;
+    height: 150px;
+    width: 100%;
+}
+
+header{
+    text-align: center;
+}
+        </style>
+    </head>
+
+<body>
+    <header>
+        <h1>Lab - 02 - Alex Danielson - 2021-CWEB1010-01 - 03/05/2021</h1>
+        <h2>Broodfield Zoo Wireframe</h2>
+    </header>
+
+    <div id = steps>
+        <b>Lab 2 Steps:</b>
+        <ol>
+            <li>1.) Create a high-fidelity wire-frame of Brookfield Zoo (Links to an external site.) homepage using Adobe XD.</li>
+                <li>A.) Prioritize the site's content by determining of how much space to allocate to a given item and where that item is located.</li>
+                <li>B.) Visualize structure and formation of how content will be presented.</li>
+                <li>C.) Use graphics and color scheme presented within the Brookfield Zoo website to craft your wire-frame.  Your wire-frame should look similar to the actual site.</li>
+            <li>2.) Usability:  Provide 2 specific recommendations for improving the site performance as it relates to how fast the homepage renders in the browser.<br>  Please refer to the slides on some of the tools you can use to assess site speed.</li>
+            <li>3.) Accessibility:  Provide 2 specific recommendations for improving the accessibility of the site.<br> Consider using the WAVE accessibility tool to determine recommendations.</li>
+        </ol>
+    </div>
+    <hr>
+    <div id ="wireframe">
+        <p class="headline">Brookfield Zoo high-fidelity Wireframe</p>
+        <img src = "wireframe.png" alt="wire-frame">
+    </div>
+
+    <hr>
+    <b>Speed/Performance Recommendations</b>
+    <div id = recommendations>
+        <p>Recommendations for Site Optimization</p>
+            <li>All recommendations come from test run on Google PageSpeed Insight.</li>
+                <ol>
+                    <img src ="Recommendation1.PNG" alt="Recommendation 1">
+                    <li>1.) Update image delivery formats. Using old outdated formats results in slower download times, more data compression, <br>and less than desireable compression.</li>
+                    
+                    <img src = "Recommendation2.PNG" alt = "Recommendation 2">
+                    <li>2.) Update website to HTTP/2. This will result in faster delivery of website content, cutting down RTT (Round Trip Time) without the need for optimization. <br> In addition to this HTTP/2 allows for better compression of website,<br> has a lighter network footprint and is less prone to errors. </li>
+                    
+                    <img src = "Recommendation3.PNG" alt = "Recommendation 3">
+                    <li>3.) Efficiently encode images in website. Can be done by using optimization tools such as squoosh, joomla, magneto, or wordpress.</li>
+                </ol>
+    </div>
+
+    <div>
+        <p>Recommendations for Accessibility</p>
+            <li>All recommendations come from results provided by WAVE.</li>
+                <ol>
+                    <img src = "WaveRec.1.PNG" alt="WaveRec.1">
+                    <li>1.) Missing alt. text for images. Alternate text allows users to understand what is on the page should the image not load correctly or not at all, <br>by providing a brief description of that image the user can comprehend what is being conveyed on the page. </li>
+
+                    <img src ="WaveRec.2.PNG" alt="WaveRec.2">
+                    <li>2.) As mentioned in recommendation 1, there is no alternate text provided for any linked images. This is a major draw back for users and is a quick fix,<br> that will greatly improve accessibility. </li>
+
+                </ol>
+    </div>
+
+    <footer></footer>
+</body>
+
+</html>
